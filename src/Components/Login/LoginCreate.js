@@ -5,7 +5,7 @@ import { Error } from '../Helper/Error';
 import { useForm } from '../../Hooks/useForm';
 import { USER_POST } from '../../Api';
 import { UserContext } from '../../UserContext';
-import { useFetch } from '../../Hooks/useFetch';
+import useFetch from '../../Hooks/useFetch';
 
 export const LoginCreate = () => {
   const username = useForm();
