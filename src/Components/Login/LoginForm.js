@@ -34,7 +34,7 @@ export const LoginForm = () => {
         ) : (
           <Button>Entrar</Button>
         )}
-        <Error error={error} />
+        <Error error={error && 'Dados incorretos.'} />
         {error && <p>{error}</p>}
       </form>
       <Link className={styles.perdeu} to="/login/perdeu">
